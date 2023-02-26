@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
             searchBtn.setOnClickListener {
+                per_page=3
                 page = 1
                 doRequest()
             }
