@@ -32,8 +32,7 @@ class MainActivity : AppCompatActivity() {
                 page++
                 doRequest()
             }
-
-            binding.recycler.addOnScrollListener(object : OnScrollListener() {
+        /*    binding.recycler.addOnScrollListener(object : OnScrollListener() {
                 override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     super.onScrolled(recycler, dx, dy)
 
@@ -54,9 +53,9 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
-            })
+            })  */
             searchBtn.setOnClickListener {
-                per_page=3
+                per_page = 3
                 page = 1
                 doRequest()
             }
