@@ -25,6 +25,13 @@ class PixaAdapter(var list: ArrayList<Hits>) : Adapter<PixaAdapter.PixaViewHolde
         holder.onBind(list[position])
     }
 
+    fun addImage(image: ArrayList<Hits>) {
+        list.addAll(image)
+        notifyItemRangeChanged(3,itemCount)
+
+
+    }
+
     override fun getItemCount(): Int {
         return list.size
     }
